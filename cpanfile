@@ -1,2 +1,5 @@
 requires "Ark";
-requires "Module::Setup";
+
+for my $cpanfile (glob("*/cpanfile")) {
+    do $cpanfile;
+}
